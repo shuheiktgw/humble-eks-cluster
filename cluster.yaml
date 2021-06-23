@@ -3,6 +3,9 @@ kind: ClusterConfig
 metadata:
   name: humble-cluster
   region: ap-northeast-1
+vpc:
+  nat:
+    gateway: Disable
 nodeGroups:
   - name: humble-node-group
     minSize: 1
